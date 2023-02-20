@@ -1,0 +1,130 @@
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("nj9oq8zt4uzjtcyn7nnu.webp");
+
+  /* Set a specific height */
+  height: 70%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.tfw {
+  background-color: black;
+  color: white;
+  border: solid 2px gray;
+  font-size: 20px;
+}
+.herotext {
+  font-size: 40px;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+
+
+
+
+
+
+
+body {
+	background: #000 url(../img/bg-body.jpg) repeat-x center top;
+	color: #eee;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0;
+}
+img {
+	border: 0;
+}
+
+#accordionNav {
+
+	width: 250px;
+	background-color: #001174;
+	border: 1px solid #2c2288;
+	margin-top: -57px;
+}
+#accordionNav h3 {
+	font-size: 20px;
+	margin: 0;
+}
+#accordionNav img {
+	padding-bottom: 8px;
+}
+#accordionNav a {
+	color: #eee;
+	text-decoration: none;
+	display: block;
+	padding-top: 5px;
+	padding-right: 8px;
+	padding-bottom: 5px;
+	padding-left: 8px;
+	outline: none;
+}
+#accordionNav a:hover {
+	color: #63a8e9;
+}
+.accordion {
+	overflow: hidden;
+	outline: none;
+}
+.accordionPanel {
+	margin: 0;
+	padding: 0;
+}
+.accordionPanelTab {
+	background-color: #8b8abb;
+	background-image: url('../img/stripes.png');
+	margin: 0;
+	cursor: pointer;
+	-webkit-user-select: none; 
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+	color: #fff;
+	height: 35px;
+	line-height: 35px;
+	font-size: 18px;
+	text-align: center;
+}
+.accordionPanelTab:hover {
+	color: rgb(141, 162, 190);
+}
+.accordionPanelContent {
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+	height: 315px;
+	background: url(../img/bg-accordion.jpg);
+}
+.highlight {
+	color: gold;
+	background-color: #999;
+}

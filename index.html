@@ -1,0 +1,102 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<title>Tom Ford - American Luxury Designer</title>
+
+<script>
+
+document.getElementById('accomplishmentsContent').style.display = 'none';
+document.getElementById('luxuryBrandContent').style.display = 'none';
+document.getElementById('descriptionTab').className = 'accordionPanelTab highlight';
+
+// Hides panels after one is clicked 
+function hidePanels() {
+    document.getElementById('accomplishmentsContent').style.display = 'none';
+    document.getElementById('luxuryBrandContent').style.display = 'none';
+    document.getElementById('descriptionContent').style.display = 'none';
+    document.getElementById('descriptionTab').className = 'accordionPanelTab';
+    document.getElementById('luxuryBrandTab').className = 'accordionPanelTab';
+    document.getElementById('accomplishmentsTab').className = 'accordionPanelTab';
+}
+// When opened, highlights the tab and shows information
+function showAccomplishmentsTab() {
+    hidePanels();
+    document.getElementById('accomplishmentsContent').style.display = 'block';
+    document.getElementById('accomplishmentsTab').className = 'accordionPanelTab highlight';
+}
+// When opened, highlights the tab and shows information
+function showLuxuryBrand() {
+    hidePanels();
+    document.getElementById('luxuryBrandContent').style.display = 'block';
+    document.getElementById('luxuryBrandTab').className = 'accordionPanelTab highlight';
+}
+// When opened, highlights the tab and shows information
+function showDescriptionTab() {
+    hidePanels();
+    document.getElementById('descriptionContent').style.display = 'block';
+    document.getElementById('descriptionTab').className = 'accordionPanelTab highlight';
+}
+</script>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="hero-image">
+        <div class="hero-text">
+          <h1 class="herotext">Tom Ford - Fashion and Fragrance Designer</h1>
+          <a href="https://www.tomford.com/" target="blank"><button class="tfw">Tom Ford Website</button></a>
+        </div>
+      </div>
+
+  
+      <br>
+      <br>
+      <br>
+      <br>
+
+        <div id="accordionNav">
+          <div class="accordionPanel">
+            <div class="accordionPanelTab" id="descriptionTab" onclick="showDescriptionTab()">Description</div>
+            <div class="accordionPanelContent" id="descriptionContent">
+              <a href="#">
+                <p>Thomas Carlyle Ford is an American fashion designer and filmmaker. Ford acted in television commercials before moving onto Parsons, where he studied architecture. AFter quitting, he was hired by other luxury brands.</p>
+              </a>
+            </div>
+          </div>
+          <div class="accordionPanel">
+            <div class="accordionPanelTab" id="accomplishmentsTab" onclick="showAccomplishmentsTab()">Accomplishments</div>
+            <div class="accordionPanelContent" id="accomplishmentsContent">
+              <a href="#" class="accomplishmentsContent">
+                <p>He launched his eponymous luxury brand in 2005, having previously served as the creative director at Gucci and Yves Saint Laurent. Ford wrote and directed the films A Single Man and Nocturnal Animals.</p>
+              </a>
+            </div>
+          </div>
+          <div class="accordionPanel">
+            <div class="accordionPanelTab" id="luxuryBrandTab" onclick="showLuxuryBrand()">Luxury Brand Tom Ford</div>
+            <div class="accordionPanelContent" id="luxuryBrandContent">
+              <a href="#">
+                <p>After leaving Gucci, Ford launched a line of menswear, beauty, eyewear, and accessories in 2006, named after himself, Tom Ford. This brand evolved to create fragrances, accessories, and much more.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      
+
+</div>
+
+</body>
+</html>
